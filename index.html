@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body onload="render()">
+    <header>
+        <div class="header">
+            <a href="#"><b>Kebabio.de</b> </a>
+            <a href="#"><b>Speisekarte</b> </a>
+            <div>
+                <img class="icon-img1" src="img/germany.png" alt="">
+                <img class="icon-img" src="img/bars-solid.svg" alt="">
+            </div>
+        </div>
+    </header>
+    <div class="content" id="content">
+        <div class="menu">
+            <div class="header-picture">
+                <img class="header-img" src="img/restaurant.jpg" alt="">
+                <div class="menu-headline margin-left">
+                    <div class="restaurant-headline">
+                        <span><b> Kebab House </b> </span>
+                    </div>
+                    <div class="stars-center">
+                        <img class="stars" src="img/star.png" alt="">
+                        <img class="stars" src="img/star.png" alt="">
+                        <img class="stars" src="img/star.png" alt="">
+                        <img class="stars" src="img/star.png" alt="">
+                        <img class="stars" src="img/star.png" alt="">
+                        <p> 748 Bewertungen</p>
+                    </div>
+                    <div class="headline-icons">
+                        <div class="headline-pics">
+                            <img class="headline-img" src="img/clock-regular.svg" alt="">
+                            <p> 30 Minuten</p>
+                            <img class="headline-img" src="img/fahrrad.png" alt="">
+                            <p>1.90 €</p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="card-all margin-left">
+                <h1>Beliebt</h1>
+                <div id="favorite">
+
+                </div>
+                <button id="mobileBasket" onclick="showBasket()" class="mobile-button"><b>Zum Warenkorb</b> </button>
+
+
+
+            </div>
+        </div>
+        <div class="sidebar" id="okati">
+            <img src="img/close.png" onclick="closeBasket()" alt="" class="close-basket">
+
+            <div id="shoppingBasket" class="basket-df">
+
+                <div class="basket-title">
+                    <h1>Warenkorb</h1>
+                </div>
+
+            </div>
+            <div class="total-pay " id="totalSum">
+
+            </div>
+            <div id="payMessage" class=" display-none">
+                <div id="thankCustomer">
+                    Vielen Dank für Ihre Bestellung</div>
+            </div>
+
+        </div>
+    </div>
+    <div class="footer">
+        <div class="footer-first">
+            <span> AGB </span>
+            <span> Datenschutzerklärung </span>
+            <span> Impressum </span>
+        </div>
+        <div class="footer-second">
+            © 2022 Kebabio.de
+            
+        </div>
+    </div>
+
+</body>
+
+</html>
